@@ -1,0 +1,37 @@
+<style>
+.circle {
+	border-radius: 50%;
+	width: 30vw;
+	height: 30vw;
+    margin-top:-6vh;
+    margin-left:26vw;
+    background-color:aquamarine;
+    background-image: url('profile.png');
+	/* width and height can be anything, as long as they're equal */
+}
+</style>
+
+<div ng-controller="IndexController">
+
+  <super-navbar>
+    <super-navbar-title>
+      Profile
+    </super-navbar-title>
+  </super-navbar>
+
+  <div class="padding">
+      <div class="black-bar" style="background-color:black;height:12vh;margin:0;padding:0;">
+      </div>
+      <div class="circle"></div>
+  </div>
+    
+    <h3 style="width:10vw;display:inline;">Writes:</h3> 
+    <div style="width:90vw;display:inline;" class="white-bar"> Fiction, Poetry
+    </div>
+    <br>
+    <h3 style="width:10vw;display:inline;">Major:</h3> 
+    <div style="width:90vw;display:inline;" class="white-bar"> Philosophy
+    </div>
+
+
+</div>
