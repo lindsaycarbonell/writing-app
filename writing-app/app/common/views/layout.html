@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="/components/supersonic/css/supersonic.css" />
   <link rel="stylesheet" href="/app/common/stylesheets/application.css" />
+      <link rel="stylesheet" href="/components/annotator/annotator.min.css"/>
   <link rel="import" href="/components/supersonic/components/import.html">
 
   <script src="http://localhost/cordova.js"></script>
@@ -15,8 +16,11 @@
   <script src="/components/angular/angular.js"></script>
   <script src="/components/supersonic/supersonic.js"></script>
   <script src="/components/webcomponentsjs/webcomponents.js"></script>
+      
       <script src="/components/jquery/dist/jquery.min.js"></script>
 <script src="/components/parse/parse.min.js"></script>
+      <script src="/components/annotator/annotator-full.min.js"></script>
+      <script src="/components/angular-annotator/src/angular-annotator.js"></script>
 
   <% _.each(yield.modules, function(module) { %>
   <script src="/app/<%= module %>.js"></script>
