@@ -1,17 +1,31 @@
 <style>
+    .black-bar{
+        margin:0;
+        padding:0;
+    }
 .circle {
 	border-radius: 50%;
 	width: 30vw;
 	height: 30vw;
-    margin-top:-6vh;
-    margin-left:26vw;
-    background-color:aquamarine;
-    background-image: url('profile.png');
+    background-color:#BFB9B2;
+    border-color:black;
+/*    margin-top:2vh;*/
+/*    margin-left:35vw;*/
+    
+    background-image: url(app/profile/views/profile.png);
 	/* width and height can be anything, as long as they're equal */
 }
+    .padding{
+        background-color:aquamarine;
+    }
+/*
+    div>a{
+    background-color:blue;
+    }
+*/
 </style>
 
-<div ng-controller="IndexController">
+<div ng-controller="CameraController">
 
   <super-navbar>
     <super-navbar-title>
@@ -20,18 +34,69 @@
   </super-navbar>
 
   <div class="padding">
-      <div class="black-bar" style="background-color:black;height:12vh;margin:0;padding:0;">
+<!--      <div class="row"><img src="{{img}}"/></div>-->
+          <div class="col col-20"></div>
+          <div class="col col-60">
+      <h4 style="font-size:25px;text-align:center;">Winston Churchill</h4>
+          </div>
+          <div class="col col-20"></div>
       </div>
-      <div class="circle"></div>
-  </div>
+      <div class="row">
+      <div class="col"></div>
+<!--      <div class="col black-bar" style="background-color:black;height:12vh;margin:0;padding:0;">-->
+    <div class="col">
+        <div class="circle" ng-click="getCamera()" style="margin-top:-40px;">
+            <div class="row">
+        <span style="margin-top:30px;margin-left:27px">take a picture</span>
+            </div>
+        </div><!--end circle-->
+    </div>
+        
+          
+          <div class="col"></div>
+      </div>
+      
+  </div><!--end padding-->
+
     
-    <h3 style="width:10vw;display:inline;">Writes:</h3> 
-    <div style="width:90vw;display:inline;" class="white-bar"> Fiction, Poetry
+    <h4 style="width:8vw;display:inline;margin-left:2vw;font-size:25px;">Writes:</h4> 
+    <div style="width:90vw;display:inline;background-color:white;padding:5px;font-size:18px;" class="white-bar"> Fiction, Poetry
     </div>
     <br>
-    <h3 style="width:10vw;display:inline;">Major:</h3> 
-    <div style="width:90vw;display:inline;" class="white-bar"> Philosophy
+    <br>
+    <h4 style="width:8vw;display:inline;margin-left:2vw;font-size:25px;">Major:</h4> 
+    <div style="width:90vw;display:inline;background-color:white;padding:5px;font-size:18px;" class="white-bar"> Philosophy
     </div>
+
+<br>
+<br>
+
+<hr>
+<h4 style="width:8vw;display:inline;margin-left:2vw;font-size:25px;">Updates:</h4>
+<br>
+<br>
+
+<div class="list">    
+    <a class="item item-icon-right">
+    Kammy commented on "Jordan"
+<!--        <span aria-hidden="true" data-icon="&#xe603;" class="pencil2"></span>-->
+    </a>
+    
+    <a class="item item-icon-right">
+    Clinton King posted a new story
+        <i class="icon icon-notification">              </i>
+    </a>
+    
+    <a class="item item-icon-right">
+    Lindsay Carbonell updated "Jordan"
+        <i class="icon icon-notification">              </i>
+    </a>
+    
+    <a class="item item-icon-right">
+    Kammy commented on "Jordan"
+        <i class="icon icon-notification">              </i>
+    </a>
+</div>
 
 
 </div>

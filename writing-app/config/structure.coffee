@@ -19,6 +19,11 @@ module.exports =
       id: "profile"
       location: "profile#index"
     }
+    {
+      title: "Updates"
+      id: "updates"
+      location: "updates#index"
+    }
   ]
 
   # rootView:

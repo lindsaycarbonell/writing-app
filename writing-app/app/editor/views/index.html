@@ -1,22 +1,44 @@
 <head>
-<link href="bootstrap.css"/>
-    <style>
-        .piece-title{
-            text-align: center;
-        }
-        p{
-            -webkit-user-select:text;
-        }
+<style>
 
-        /*p::selection {
-            background: #ffb7b7;
-        }
-        
-        p::-moz-selection {
-            background: #ffb7b7;
-        }*/
+    .story-box{
+        border:1px solid black;
 
-    </style>
+        padding:5px;
+        margin-right:10px;
+        margin-bottom:10px;
+    }
+    .big-story-box{
+        border:1px solid black;
+
+        padding:5px;
+        margin-right:10px;
+        margin-bottom:10px;
+    }
+
+    h2{
+        font-size:20px;
+        text-align: center;
+    }
+    h3{
+        font-size:12px;
+    }
+    p{
+        font-size:10px;
+    }
+    .italic{
+        font-style:italic;
+    }
+    .bold{
+        font-weight:bold;
+    }
+    .date{
+        display:inline;
+    }
+    .editors{
+        display:inline;
+    }
+</style>
 </head>
 
 <div ng-controller="IndexController">
@@ -27,13 +49,154 @@
     </super-navbar-title>
   </super-navbar>
 
-  <div class="padding">
-    <h2 class="piece-title">Jordan</h2>
-      <p contentEditable="true">The blue of his eyes must be fueled by the constant wild synapses in his mind, making connections from one idea to another in ways only eccentric, misunderstood artists can. His left eye has one brown freckle like a speck of brown paint leftover before his eyes decided to be brighter. 
-      </p>
-      <p contentEditable="true">Sometimes when there’s quiet you can hear the little hmm hmm he makes when he’s thinking, accompanied by the slight bouncing of his knee. He asks you often what you’re thinking about, trying to overlap your thoughts with his so when you’re sitting together the quiet feels more like concurrent imagining. Once you had a burst of inspiration while you were with him, and he smiled ever wider as you babbled on with just enough nonsense for him to understand exactly what you meant. 
-      </p>
-  </div>
-
+  <div class="padding container">
+      <div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon super-search placeholder-icon"></i>
+    <input type="text" placeholder="Search">
+  </label>
 </div>
+      <div class="row">
+    
+<super-navigate location="editor#story">
+<div class="card">
+    <div class="item item-divider">
+        My Story 1
+    </div>
+  <div class="item item-text-wrap">
+      <p class="italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum posuere elit vitae efficitur.</p>
+    <div class="row">
+      <p class="bold">date posted:</p>
+        &nbsp;
+      <p class="date">09/06/2015</p>
+      </div>
+    <div class="row">
+        <p class="bold">last updated: </p>
+          &nbsp;  
+        <p class="date">09/25/2015</p>
+    </div> 
+      <div class="row">
+      <p class="bold">edited by: </p>
+          &nbsp;
+      <p class="editors">Hannah, Kammy, Andy, Jennifer</p>
+    </div>
+  </div>
+</div>
+</super-navigate>
+      </div><!--end row-->
+      <div class="row">
+      <super-navigate location="editor#story">
+    <div class="card">
+    <div class="item item-divider">
+        My Story 1
+    </div>
+  <div class="item item-text-wrap">
+      <p class="italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum posuere elit vitae efficitur.</p>
+    <div class="row">
+      <p class="bold">date posted:</p>
+        &nbsp;
+      <p class="date">09/06/2015</p>
+      </div>
+    <div class="row">
+        <p class="bold">last updated: </p>
+          &nbsp;  
+        <p class="date">09/25/2015</p>
+    </div> 
+      <div class="row">
+      <p class="bold">edited by: </p>
+          &nbsp;
+      <p class="editors">Hannah, Kammy, Andy, Jennifer</p>
+    </div>
+  </div>
+</div>
+</super-navigate>
+          
+      </div><!--end row-->
+      
+      <div class="row">
+      
+      <super-navigate location="editor#story">
+    <div class="card">
+    <div class="item item-divider">
+        My Story 1
+    </div>
+  <div class="item item-text-wrap">
+      <p class="italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum posuere elit vitae efficitur.</p>
+    <div class="row">
+      <p class="bold">date posted:</p>
+        &nbsp;
+      <p class="date">09/06/2015</p>
+      </div>
+    <div class="row">
+        <p class="bold">last updated: </p>
+          &nbsp;  
+        <p class="date">09/25/2015</p>
+    </div> 
+      <div class="row">
+      <p class="bold">edited by: </p>
+          &nbsp;
+      <p class="editors">Hannah, Kammy, Andy, Jennifer</p>
+    </div>
+  </div>
+</div>
+</super-navigate>
+      </div><!--end row-->
+      <div class="row">
+      <super-navigate location="editor#story">
+    <div class="card">
+    <div class="item item-divider">
+        My Story 1
+    </div>
+  <div class="item item-text-wrap">
+      <p class="italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum posuere elit vitae efficitur.</p>
+    <div class="row">
+      <p class="bold">date posted:</p>
+        &nbsp;
+      <p class="date">09/06/2015</p>
+      </div>
+    <div class="row">
+        <p class="bold">last updated: </p>
+          &nbsp;  
+        <p class="date">09/25/2015</p>
+    </div> 
+      <div class="row">
+      <p class="bold">edited by: </p>
+          &nbsp;
+      <p class="editors">Hannah, Kammy, Andy, Jennifer</p>
+    </div>
+  </div>
+</div>
+</super-navigate>
+    </div><!--end row-->
+      
+<div class="row">
+<super-navigate location="editor#story">
+    <div class="card">
+    <div class="item item-divider">
+        My Story 1
+    </div>
+  <div class="item item-text-wrap">
+      <p class="italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum posuere elit vitae efficitur.</p>
+    <div class="row">
+      <p class="bold">date posted:</p>
+        &nbsp;
+      <p class="date">09/06/2015</p>
+      </div>
+    <div class="row">
+        <p class="bold">last updated: </p>
+          &nbsp;  
+        <p class="date">09/25/2015</p>
+    </div> 
+      <div class="row">
+      <p class="bold">edited by: </p>
+          &nbsp;
+      <p class="editors">Hannah, Kammy, Andy, Jennifer</p>
+    </div>
+  </div>
+</div>
+</super-navigate>
+          </div>
+      </div>
+</div><!--end container-->
+
 </div>
